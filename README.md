@@ -20,17 +20,17 @@ Pewlett Hackard, a huge company with thousands of employees, is in the process o
 - Creating tailored lists for specific departments
 
 ## Results
-The analysis demonstrated that a massive number of employers are due for retirement accross all departments
+The analysis demonstrated that a massive number of employers are due for retirement across all departments
 
 #### Employees retiring by job titles 
-The table below shows the number of employees ritiring according to their job title is 90,398
+The table below shows the number of employees retiring according to their job title is 
 
 ![image](https://user-images.githubusercontent.com/90416094/142129919-2aa323d1-5094-41c4-8472-9f3cab02dd2d.png)
 
     
 ## Looking into the future
 
-### There are a total of 300,024 empllyees at Pewlett Hackard
+### There are a total of 300,024 employees at Pewlett Hackard
    
     SELECT COUNT (emp_no)
     FROM employees;
@@ -38,14 +38,14 @@ The table below shows the number of employees ritiring according to their job ti
     
    ![image](https://user-images.githubusercontent.com/90416094/142255980-657e14d3-2a18-4ce7-b8f7-57428282683d.png)
 
-#### The  number of employees who are eligible for retirement are 
+#### The number of employees who are eligible for retirement are 
 ### 90,398
 
 ![image](https://user-images.githubusercontent.com/90416094/142255900-a766df59-95a8-4ad6-bec9-05596a243023.png)
 
 #### The Employees Eligible for the Mentorship Program
 
-To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table showing employees born between January 1, 1965 and December 31, 1965 was created uisng the follwing commands in PgAdmin
+To ensure upcoming vacant position will be filled, a Mentorship Eligibility analysis showing employees born between January 1, 1965 and December 31, 1965 was created using the following commands in PgAdmin
 
           SELECT DISTINCT ON (em.emp_no) em.emp_no,
           em.first_name,
@@ -63,7 +63,7 @@ To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table
     (em.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
     ORDER BY em.emp_no;	
 
-### The resulting table  shows a total of 1549 employees eligible for the the mentorship program.
+### The resulting table shows a total of 1549 employees eligible for the the mentorship program.
      
     SELECT COUNT(me.emp_no)
     FROM mentorship_eligibilty as me
@@ -80,6 +80,4 @@ To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table
 
 ## Summary:
 
-o	How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-
-
+Pewlett Hackard has a total of 300,024 total employees. Of these employees, 90,398 are due for retirement. This is about a third of its entire workforce.  However, only 1549 employees are eligible for the mentorship program. This is not nearly enough to cover the upcoming vacant positions
