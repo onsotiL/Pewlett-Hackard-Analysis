@@ -21,17 +21,31 @@ Pewlett Hackard, a huge company with thousands of employees, is in the process o
 
 ## Results
 The analysis demonstrated that a massive number of employers are due for retirement accross all departments
-### Employees retiring by Department 
-The number of employees retiring from each of the nine departments ranges between 2000 and 5000 in each department
-![image](https://user-images.githubusercontent.com/90416094/142129861-d7b5906f-f693-48fd-b48b-6a6d514d35ba.png)
 
 #### Employees retiring by job titles 
+The table below shows the number of employees ritiring according to their job title is 90,398
+
 ![image](https://user-images.githubusercontent.com/90416094/142129919-2aa323d1-5094-41c4-8472-9f3cab02dd2d.png)
 
+    
+## Looking into the future
+
+### There are a total of 300,024 empllyees at Pewlett Hackard
+   
+    SELECT COUNT (emp_no)
+    FROM employees;
+    
+    
+   ![image](https://user-images.githubusercontent.com/90416094/142255980-657e14d3-2a18-4ce7-b8f7-57428282683d.png)
+
+#### The  number of employees who are eligible for retirement are 
+### 90,398
+
+![image](https://user-images.githubusercontent.com/90416094/142255900-a766df59-95a8-4ad6-bec9-05596a243023.png)
 
 #### The Employees Eligible for the Mentorship Program
-To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table showing employees born between January 1, 1965 and December 31, 1965 was created uisng the follwing commands in PgAdmin
 
+To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table showing employees born between January 1, 1965 and December 31, 1965 was created uisng the follwing commands in PgAdmin
 
           SELECT DISTINCT ON (em.emp_no) em.emp_no,
           em.first_name,
@@ -48,36 +62,24 @@ To ensure upcoming vacant position will be filled, a Mentorship Eligibilty table
     WHERE (de.to_date = '9999-01-01') AND 
     (em.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
     ORDER BY em.emp_no;	
-    
-## Looking into the future
-1.	Summary: Provide high-level responses to the following questions, then provide two additional queries or tables that may provide more insight into the upcoming "silver tsunami."
-o	How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-### There are a total of 300,024 empllyees at Pewlett Hackard
-   
-    SELECT COUNT (emp_no)
-    FROM employees;
-    
 ### The resulting table  shows a total of 1549 employees eligible for the the mentorship program.
      
     SELECT COUNT(me.emp_no)
     FROM mentorship_eligibilty as me
+    
+![image](https://user-images.githubusercontent.com/90416094/142222533-4d83c40c-1d59-4913-be3e-66ba009ba8a2.png)
 
-### The table new table bellow shows viable mentorship candidates by titles
+### The table new table below shows viable mentorship candidates by titles
 
      SELECT COUNT(title),title
      FROM mentorship_eligibilty as me
      GROUP BY title
 
+![image](https://user-images.githubusercontent.com/90416094/142222726-4f77a9ab-7a76-473d-a638-6546bc79af86.png)
+
+## Summary:
+
+o	How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
 
-
-
-
-
-
-
-
-o	Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-
-Pewlett-Hackard-Analysis
