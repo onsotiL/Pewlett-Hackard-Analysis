@@ -23,7 +23,7 @@ Pewlett Hackard, a huge company with thousands of employees, is in the process o
 The analysis demonstrated that a massive number of employers are due for retirement across all departments
 
 #### Employees retiring by job titles 
-The table below shows the number of employees retiring according to their job title is 
+The table below shows the number of employees retiring according to their job title 
 
 ![image](https://user-images.githubusercontent.com/90416094/142129919-2aa323d1-5094-41c4-8472-9f3cab02dd2d.png)
 
