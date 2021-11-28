@@ -1,7 +1,8 @@
 --CHALLENGE
 --Employee_Database_challenge
 --Deliverable 1: The Number of Retiring Employees by Title 
--- SELECT * FROM titles SELECT * FROM employees; SELECT em.emp_no,
+-- SELECT * FROM titles SELECT * FROM employees; 
+SELECT em.emp_no,
 	   em.first_name,
 	   em.last_name,
 	   ti.title,
@@ -55,3 +56,8 @@ ORDER BY em.emp_no;
 -- Total Employees
 SELECT COUNT (emp_no)
 FROM employees;
+
+-- Mentorship condidates by title
+SELECT COUNT(title),title
+FROM mentorship_eligibilty as me
+GROUP BY title

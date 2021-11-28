@@ -80,4 +80,4 @@ To ensure upcoming vacant position will be filled, a Mentorship Eligibility anal
 
 ## Summary:
 
-Pewlett Hackard has a total of 300,024 total employees. Of these employees, 90,398 are due for retirement. This is about a third of its entire workforce.  However, only 1549 employees are eligible for the mentorship program. This is not nearly enough to cover the upcoming vacant positions
+Pewlett Hackard has a total of 300,024 total employees. Of these employees, 90,398 are due for retirement. This is about a third of its entire workforce.  However, only 1549 employees are eligible for the mentorship program. This is not nearly enough to cover the upcoming vacant positions in the company.
